@@ -7,6 +7,9 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../imagenes/favicon.png" type="image/x-icon">
 
+    <!-- AOS ANIMACION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -14,7 +17,12 @@
     <!-- MI CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>Quienes Somos</title>
+    <title>TakeMyThink - Quienes Somos</title>
+
+    <meta name="description" content="Conoce los rostros detras de la empresa en quienes somos de TakeMyThink.">
+
+    <meta name="keywords"
+        content="Diseño grafico, Marketing, Publicidad, Fotografia, Community Manager, redes, planificacion">
 </head>
 
 <body class="container-fluid">
@@ -22,7 +30,7 @@
     <header class="navbar navbar-expand-lg">
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
+            <a data-aos="fade-right" class="navbar-brand" href="../index.html">
                 <img class="logo" src="../imagenes/Logopag.png" alt="Logo de la pagina">
                 <h1>TakeMy<span class="titulo">Think</span></h1>
             </a>
@@ -32,7 +40,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav data-aos="fade-left" class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="linkNav" href="../index.html">Inicio</a>
@@ -69,11 +77,13 @@
                         <p class="lead">Somos Luna y Milagros, juntas creamos Take My Think, una organización con el fin
                             de ayudar a las marcas, los negocios y las personas influyentes a tener un impacto a traves
                             de soluciones de marketing dinámicas y focalizadas.
-                            <br><br>
+                        </p>
+                        <p class="lead">
                             Nos encargamos de crear una comunicación efectiva con el publico de su comunidad integrando
                             todos los aspectos de tal proceso, desde la estrategia de marketing, hasta la cración del
                             contenido y su publicación.
-                            <br><br>
+                        </p>
+                        <p class="lead">
                             El marketing es una industria que crece rápidamente. Y hoy en día para lograr el éxito debe
                             mantenerse a la vanguardia al aprovechar una solución eficaz que se adapte a sus necesidades
                             específicas.
@@ -84,12 +94,12 @@
             </div>
         </div>
 
-        <div class="divisor text-center p-5">
+        <div data-aos="fade-up" data-aos-duration="2500" class="divisor text-center p-5">
             <h3>Nos especializamos en...</h3>
         </div>
 
         <!-- CARRUSEL -->
-        <section class="quienesSomosCarrusel">
+        <section data-aos="fade-up" data-aos-duration="3000" class="quienesSomosCarrusel">
             <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -142,7 +152,7 @@
 
     </main>
 
-    <div class="divisor text-center p-5">
+    <div data-aos="fade-up" data-aos-duration="2500" class="divisor text-center p-5">
         <h3>Nosotras somos...</h3>
     </div>
 
@@ -151,27 +161,19 @@
         <div class="row">
             <div class="col-xl-6 col-md-6 col-sm-12">
                 <div class="tarjetas">
-                    <div class="    ">
-                        <img src="../imagenes/perfilpibas.png" class="card-img-top" alt="Foto de Luna">
-                        <h3 class="card-title">Luna May</h3>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis odio at culpa
-                            inventore, laboriosam officia, tempore ab, sunt delectus totam. Iusto libero voluptatem est
-                            quidem maxime. Hic in fugit amet facilis ipsam? Fuga hic facere est dolorem voluptate
-                            molestiae ipsam officia perferendis sint magnam doloribus, illo quam vero. Ut.</p>
-                    </div>
+                    <img src="../imagenes/perfilpibas.png" class="card-img-top" alt="Foto de Luna">
+                    <h3 class="card-title">Luna May</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis odio at culpa
+                        inventore, laboriosam officia, tempore ab, sunt delectus totam. Iusto libero voluptatem est</p>
                 </div>
             </div>
             <div class="col-xl-6 col-md-6 col-sm-12">
                 <div class="tarjetas">
-                    <div class="">
-                        <img src="../imagenes/perfilpibas.png" class="card-img-top" alt="Foto de Luna">
-                        <h3 class="card-title">Mili Richi</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis odio at culpa
-                            inventore, laboriosam officia, tempore ab, sunt delectus totam. Iusto libero voluptatem est
-                            quidem maxime. Hic in fugit amet facilis ipsam? Fuga hic facere est dolorem voluptate
-                            molestiae ipsam officia perferendis sint magnam doloribus, illo quam vero. Ut.</p>
-                    </div>
+                    <img src="../imagenes/perfilpibas.png" class="card-img-top" alt="Foto de Luna">
+                    <h3 class="card-title">Mili Richi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis odio at culpa
+                        inventore, laboriosam officia, tempore ab, sunt delectus totam. Iusto libero voluptatem est
+                    </p>
                 </div>
             </div>
 
@@ -229,6 +231,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- AOS ANIMACION SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
